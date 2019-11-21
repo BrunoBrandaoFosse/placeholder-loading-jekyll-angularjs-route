@@ -1,0 +1,13 @@
+<div class="container" ng-controller="HomeCtrl as vm">
+
+  <div ng-show="!vm.posts">{% include _placeholder/list_posts_with_styles.html %}</div>
+
+  <div class="row mt-4" ng-show="vm.posts">
+    <div class="col-12">
+      <a class="list_post" href="#!/posts/[[ post.id ]]" ng-repeat="post in vm.posts">
+        <h3>[[ post.title ]]</h3>
+        <p>[[ post.body | limitTo: 90 ]]<span ng-show="post.body.length > 90">...</span></p>
+      </a>
+    </div>
+  </div>
+</div>

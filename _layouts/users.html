@@ -1,0 +1,13 @@
+<div class="container" ng-controller="UsersCtrl as vm">
+
+  <div ng-show="!vm.users">{% include _placeholder/list_posts_with_styles.html %}</div>
+
+  <div class="row mt-4" ng-show="vm.users">
+    <div class="col-12">
+      <a class="list_post" href="#!/users/[[ user.id ]]" ng-repeat="user in vm.users">
+        <h3>[[ user.name ]]</h3>
+        <p>[[ user.email ]] - [[ user.phone ]]</p>
+      </a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,3 @@
+---
+layout: details_user
+---

@@ -1,0 +1,55 @@
+<div class="container" ng-controller="UserCtrl as vm">
+
+  <div ng-show="!vm.user">{% include _placeholder/post.html %}</div>
+
+  <div class="row" ng-show="vm.user">
+    <div class="col-12">
+      <div class="post mt-4">
+        <h3 class="post_title text-primary">[[ vm.user.name ]]</h3>
+        <div class="post_content">
+          <p><strong>Phone:</strong> [[ vm.user.phone ]]</p>
+          <p><strong>Email:</strong> [[ vm.user.email ]]</p>
+          <p><strong>Website:</strong> [[ vm.user.website ]]</p>
+        </div>
+        <hr>
+        <div class="post_content m-0">
+          <h4>Address</h4>
+          <p><strong>Street:</strong> [[ vm.user.address.street ]]</p>
+          <p><strong>Suite:</strong> [[ vm.user.address.suite ]]</p>
+          <p><strong>City:</strong> [[ vm.user.address.city ]]</p>
+          <p><strong>Zipcode:</strong> [[ vm.user.address.zipcode ]]</p>
+        </div>
+        <hr>
+        <div class="post_content m-0">
+          <h4>Company</h4>
+          <p><strong>Name:</strong> [[ vm.user.company.name ]]</p>
+          <p><strong>Catch Phrase:</strong> [[ vm.user.company.catchPhrase ]]</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- {
+  "id": 1,
+  "name": "Leanne Graham",
+  "username": "Bret",
+  "email": "Sincere@april.biz",
+  "address": {
+    "street": "Kulas Light",
+    "suite": "Apt. 556",
+    "city": "Gwenborough",
+    "zipcode": "92998-3874",
+    "geo": {
+      "lat": "-37.3159",
+      "lng": "81.1496"
+    }
+  },
+  "phone": "1-770-736-8031 x56442",
+  "website": "hildegard.org",
+  "company": {
+    "name": "Romaguera-Crona",
+    "catchPhrase": "Multi-layered client-server neural-net",
+    "bs": "harness real-time e-markets"
+  }
+} -->

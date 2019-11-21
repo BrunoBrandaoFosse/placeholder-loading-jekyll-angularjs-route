@@ -1,0 +1,16 @@
+<div class="container" ng-controller="PostCtrl as vm">
+
+  <div ng-show="!vm.post">{% include _placeholder/post.html %}</div>
+
+  <div class="row" ng-show="vm.post">
+    <div class="col-12">
+      <div class="post mt-4">
+        <h3 class="post_title text-primary">[[ vm.post.title ]]</h3>
+        <p class="post_author">[[ vm.post.user.name ]] - [[ vm.post.user.email ]]</p>
+        <div class="post_content">
+          <p>[[ vm.post.body ]]</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

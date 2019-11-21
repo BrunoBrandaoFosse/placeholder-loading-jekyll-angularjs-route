@@ -1,0 +1,40 @@
+a.list_post {
+  text-decoration: none;
+  display: block;
+  border: 1px solid #eee;
+  padding: 15px;
+  margin: 15px auto;
+  -webkit-box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.1);
+  transition: all .3s ease;
+  h3 {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  p {
+    font-size: 14px;
+    font-weight: 400;
+    color: $cinza;
+  }
+  &:hover {
+    -webkit-box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.post {
+  .post_title {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .post_author {
+    font-size: 12px;
+    font-weight: 400;
+    color: $cinza_claro;
+  }
+  .post_content {
+    margin-top: 30px;
+  }
+}
